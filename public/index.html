@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <h1>Task Manager <span>📝</span></h1>
+        <div class="filters">
+            <button id="filter-all">Toate</button>
+            <button id="filter-completed">Finalizate</button>
+            <button id="filter-active">Necompletate</button>
+        </div>
+    </div>
+    <div class="sections">
+        <section id="add-task">
+            <h2>Adauga un task <span>✅</span></h2>
+            <form id="task-form">
+                <input type="text" id="title" placeholder="Titlu">
+                <textarea id="description" placeholder="Descriere"></textarea>
+                <input type="date" id="deadline">
+                <button type="submit">Adauga</button>
+            </form>
+        </section>
+
+        <section id="task-list">
+            <h2>Lista de task-uri <span>📋</span></h2>
+            <ul id="tasks">
+
+            </ul>
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
